@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E4DBD3B16F96BD4006F93E8 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4DBD3A16F96BD4006F93E8 /* DetailViewController.m */; };
+		8EA53E7816F9F0C2005BE9E7 /* AsynchronousImageDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA53E7716F9F0C2005BE9E7 /* AsynchronousImageDownload.m */; };
 		8EE7BA2316F92F8A00882A7E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE7BA2216F92F8A00882A7E /* UIKit.framework */; };
 		8EE7BA2516F92F8A00882A7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE7BA2416F92F8A00882A7E /* Foundation.framework */; };
 		8EE7BA2716F92F8A00882A7E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE7BA2616F92F8A00882A7E /* CoreGraphics.framework */; };
@@ -18,9 +20,14 @@
 		8EE7BA3916F92F8A00882A7E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EE7BA3816F92F8A00882A7E /* Default-568h@2x.png */; };
 		8EE7BA3C16F92F8A00882A7E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE7BA3B16F92F8A00882A7E /* ViewController.m */; };
 		8EE7BA3F16F92F8A00882A7E /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EE7BA3D16F92F8A00882A7E /* ViewController.xib */; };
+		8EE7BA4716F9579E00882A7E /* TimelineObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE7BA4616F9579E00882A7E /* TimelineObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8E4DBD3916F96BD4006F93E8 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		8E4DBD3A16F96BD4006F93E8 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		8EA53E7616F9F0C2005BE9E7 /* AsynchronousImageDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsynchronousImageDownload.h; sourceTree = "<group>"; };
+		8EA53E7716F9F0C2005BE9E7 /* AsynchronousImageDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsynchronousImageDownload.m; sourceTree = "<group>"; };
 		8EE7BA1F16F92F8A00882A7E /* PublicTimeline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PublicTimeline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EE7BA2216F92F8A00882A7E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8EE7BA2416F92F8A00882A7E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -37,6 +44,8 @@
 		8EE7BA3A16F92F8A00882A7E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		8EE7BA3B16F92F8A00882A7E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8EE7BA3E16F92F8A00882A7E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		8EE7BA4516F9579E00882A7E /* TimelineObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimelineObject.h; sourceTree = "<group>"; };
+		8EE7BA4616F9579E00882A7E /* TimelineObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimelineObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +62,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8EA53E7916FA0C31005BE9E7 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				8EE7BA3116F92F8A00882A7E /* AppDelegate.h */,
+				8EE7BA3216F92F8A00882A7E /* AppDelegate.m */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		8EA53E7A16FA0C48005BE9E7 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8EE7BA3A16F92F8A00882A7E /* ViewController.h */,
+				8EE7BA3B16F92F8A00882A7E /* ViewController.m */,
+			);
+			name = "View Controller";
+			sourceTree = "<group>";
+		};
+		8EA53E7B16FA0C66005BE9E7 /* Time Line */ = {
+			isa = PBXGroup;
+			children = (
+				8EE7BA4516F9579E00882A7E /* TimelineObject.h */,
+				8EE7BA4616F9579E00882A7E /* TimelineObject.m */,
+			);
+			name = "Time Line";
+			sourceTree = "<group>";
+		};
+		8EA53E7C16FA0C8C005BE9E7 /* Detail View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8E4DBD3916F96BD4006F93E8 /* DetailViewController.h */,
+				8E4DBD3A16F96BD4006F93E8 /* DetailViewController.m */,
+			);
+			name = "Detail View Controller";
+			sourceTree = "<group>";
+		};
+		8EA53E7D16FA0CAF005BE9E7 /* Asynchronus Image Download */ = {
+			isa = PBXGroup;
+			children = (
+				8EA53E7616F9F0C2005BE9E7 /* AsynchronousImageDownload.h */,
+				8EA53E7716F9F0C2005BE9E7 /* AsynchronousImageDownload.m */,
+			);
+			name = "Asynchronus Image Download";
+			sourceTree = "<group>";
+		};
 		8EE7BA1616F92F8A00882A7E = {
 			isa = PBXGroup;
 			children = (
@@ -83,11 +137,11 @@
 		8EE7BA2816F92F8A00882A7E /* PublicTimeline */ = {
 			isa = PBXGroup;
 			children = (
-				8EE7BA3116F92F8A00882A7E /* AppDelegate.h */,
-				8EE7BA3216F92F8A00882A7E /* AppDelegate.m */,
-				8EE7BA3A16F92F8A00882A7E /* ViewController.h */,
-				8EE7BA3B16F92F8A00882A7E /* ViewController.m */,
-				8EE7BA3D16F92F8A00882A7E /* ViewController.xib */,
+				8EA53E7916FA0C31005BE9E7 /* App Delegate */,
+				8EA53E7A16FA0C48005BE9E7 /* View Controller */,
+				8EA53E7B16FA0C66005BE9E7 /* Time Line */,
+				8EA53E7C16FA0C8C005BE9E7 /* Detail View Controller */,
+				8EA53E7D16FA0CAF005BE9E7 /* Asynchronus Image Download */,
 				8EE7BA2916F92F8A00882A7E /* Supporting Files */,
 			);
 			path = PublicTimeline;
@@ -96,6 +150,7 @@
 		8EE7BA2916F92F8A00882A7E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8EE7BA3D16F92F8A00882A7E /* ViewController.xib */,
 				8EE7BA2A16F92F8A00882A7E /* PublicTimeline-Info.plist */,
 				8EE7BA2B16F92F8A00882A7E /* InfoPlist.strings */,
 				8EE7BA2E16F92F8A00882A7E /* main.m */,
@@ -176,6 +231,9 @@
 				8EE7BA2F16F92F8A00882A7E /* main.m in Sources */,
 				8EE7BA3316F92F8A00882A7E /* AppDelegate.m in Sources */,
 				8EE7BA3C16F92F8A00882A7E /* ViewController.m in Sources */,
+				8EE7BA4716F9579E00882A7E /* TimelineObject.m in Sources */,
+				8E4DBD3B16F96BD4006F93E8 /* DetailViewController.m in Sources */,
+				8EA53E7816F9F0C2005BE9E7 /* AsynchronousImageDownload.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +356,7 @@
 				8EE7BA4416F92F8A00882A7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
